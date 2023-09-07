@@ -68,8 +68,8 @@ if uploaded_file is not None:
         tokens += 5
         st.success(f"Tokens = {tokens}")
         if __name__ == '__main__':
-	    st.write("Token Sent")
-            AIRTIME().send()
+		st.write("Token Sent")
+		AIRTIME().send()
         
     except:
         st.info("Failed, Upload another image")
