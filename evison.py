@@ -37,7 +37,7 @@ class AIRTIME:
         phone_number = user_phone
 
         # Set The 3-Letter ISO currency code and the amount
-        amount ="02.00"
+        amount ="05.00"
         currency_code = "KES"
 
         try:
@@ -65,9 +65,10 @@ if uploaded_file is not None:
     try:
         st.spinner("Processing.......")
         prediction = model.predict(temp_path, confidence=40, overlap=30)
-        tokens += 2
+        tokens += 5
         st.success(f"Tokens = {tokens}")
         if __name__ == '__main__':
+	    st.write("Token Sent")
             AIRTIME().send()
         
     except:
