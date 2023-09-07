@@ -67,8 +67,7 @@ if uploaded_file is not None:
         prediction = model.predict(temp_path, confidence=40, overlap=30)
         tokens += 5
         st.success(f"Tokens = {tokens}")
-        if __name__ == '__main__':
-    		AIRTIME().send()
+        AIRTIME().send()
         
     except:
         st.info("Failed, Upload another image")
