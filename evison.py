@@ -17,7 +17,7 @@ st.set_page_config(page_title="e vision", page_icon="🚮")
 user_phone = st.text_input("Enter Your Phone Number: ")
 
 # Display the entered text
-if user_input:
+if user_phone:
     st.write(f"You entered: {user_phone}")
     
 class AIRTIME:
