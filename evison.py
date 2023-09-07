@@ -7,8 +7,11 @@ rf = Roboflow(api_key="aQONY7aSjUN7H1sSqu0s")
 project = rf.workspace().project("e-waste-detection-model")
 model = project.version(3).model
 
-st.title("Image")
-st.markdown("Upload an Image and have it decoded")
+# Page configuration
+st.set_page_config(page_title="e vision", page_icon="🚮")
+
+st.title("e-vision")
+st.markdown("Detect E-WASTE using AI")
 
 uploaded_file = st.file_uploader(label="Upload Image", type=["jpg", "jpeg", "png"], key="1")
 if uploaded_file is not None:
