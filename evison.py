@@ -37,7 +37,7 @@ class AIRTIME:
         phone_number = user_phone
 
         # Set The 3-Letter ISO currency code and the amount
-        amount ="0.10"
+        amount ="01.00"
         currency_code = "KES"
 
         try:
